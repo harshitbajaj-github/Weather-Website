@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box">
+    <input type="text" id="search" placeholder="Enter city & press Enter">
+
+    <div>
+      <h1 id="temp">--<sup>°</sup></h1>
+      <p style="text-align:center;font-size:35px;color:white;">Celsius</p>
+
+      <p class="data">Wind Speed :- <span id="ws">--</span> km/h</p>
+      <p class="data">Humidity :- <span id="hmdty">--</span> %</p>
+      <p class="data">Condition :- <span id="condition">--</span></p>
+    </div>
+
+    <div style="display:flex;justify-content:center;">
+      <img id="weatherGif" src="images/default.png" width="320" height="120">   
+    </div>
+
+    <button id="locationBtn">📍 Current Location</button>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
